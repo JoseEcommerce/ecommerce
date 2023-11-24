@@ -7,10 +7,7 @@ const getProducts = async (req, res) => {
     if(category){
       query.attributes = {exclude: ["Categorie","updatedAt","createdAt"]}
       query.include = {model: [Categorie], where: {name:category}}
-    }else{
-      query.include = {model:Image}
     }
-    
     const result = await Product.findAll(query)
     console.log(result[0].Categorie)
     return res.status(200).json({ product: result })
