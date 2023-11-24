@@ -49,7 +49,7 @@ app.use(express.json())
 
 app.use(cors({
   credentials: true,
-  origin: "https://ecoomerce-project-zwemby24f-rocnail23s-projects.vercel.app",
+  origin: "https://ecoomerce-project-seven.vercel.app",
 
 }))
 
