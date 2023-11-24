@@ -1,6 +1,8 @@
 const { Sequelize } = require('sequelize')
 
-const sequelize = new Sequelize(process.env.URI)
+const sequelize = new Sequelize(process.env.URI,{
+  ssl:true,
+})
 
 const connectDb = async () => {
   try {
