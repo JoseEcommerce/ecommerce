@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "migrate": "sequelize db:migrate --env production --config src/config/config.js",
+     "migrate": "sequelize db:migrate --env production --config src/config/config.json",
     "start": "npm run migrate && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
